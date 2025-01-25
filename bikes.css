@@ -1,0 +1,130 @@
+/* General Reset */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.6)), url('./img/bike2.jpg');
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    background-attachment: fixed; /* Keeps the image fixed when scrolling */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 10px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+header .logo a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ff9900;
+}
+
+/* Bikes Section */
+.bikes-section {
+    padding: 30px 15px;
+    text-align: center;
+}
+
+.bikes-section h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.bikes-section p {
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.bikes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.bike-item {
+    background-color: #000;
+    border: 1px solid #000;
+    border-radius: 5px;
+    padding: 0px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.bike-item img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.bike-item h3 {
+    font-size: 20px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.bike-item p {
+    font-size: 16px;
+    color: #777;
+}
+
+.bike-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+}
